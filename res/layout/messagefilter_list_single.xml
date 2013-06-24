@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:gravity="left"
+    android:background="#fff5f5f5">
+    <TextView android:layout_width="fill_parent" android:layout_height="wrap_content"
+        android:id="@+id/messagefilter_list_single_textview"
+        android:textColor="#ff000000" android:textSize="20sp"
+        android:textStyle="bold" android:gravity="left|center_vertical"
+        android:layout_margin="10dp"/>
+
+</LinearLayout>

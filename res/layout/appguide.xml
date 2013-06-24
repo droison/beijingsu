@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    <com.mine.beijingserv.ui.SamSlideLayout
+      xmlns:android="http://schemas.android.com/apk/res/android"    
+	  android:id="@+id/appguide_ScrollLayout"    
+	  android:layout_width="fill_parent"    
+	  android:layout_height="fill_parent">
+	  <RelativeLayout    
+	  	android:background="@drawable/appguide1"    
+	  	android:layout_width="fill_parent"    
+	  	android:layout_height="fill_parent">    
+	  </RelativeLayout>    
+	  
+	  <RelativeLayout    
+	  	android:background="@drawable/appguide2"    
+	  	android:layout_width="fill_parent"    
+	  	android:layout_height="fill_parent">    
+	  </RelativeLayout>    
+      <RelativeLayout    
+	  	android:background="@drawable/appguide3"    
+	  	android:layout_width="fill_parent"    
+	  	android:layout_height="fill_parent"> 	  	
+	  </RelativeLayout>
+	  
+       <RelativeLayout    
+	  	android:background="@drawable/appguide4"    
+	  	android:layout_width="fill_parent"    
+	  	android:layout_height="fill_parent"> 
+	  	<TextView android:background="@drawable/appguide_start_selector" 
+	    	android:layout_centerHorizontal="true"
+	    	android:layout_alignParentBottom="true"
+	    	android:layout_width="220dp"
+	    	android:layout_height="40dp"
+	    	android:layout_marginBottom="20dp"
+	    	android:text="开始" 
+	    	android:textColor="#ffffffff" android:textSize="22sp"
+            android:gravity="center"
+	    	android:id="@+id/appguide_start_button"/> 
+	  </RelativeLayout>
+        
+        
+    </com.mine.beijingserv.ui.SamSlideLayout>
+
+</LinearLayout>

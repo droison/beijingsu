@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:background="#fff5f5f5">
+    <RelativeLayout
+        android:id="@+id/tabmessage_topbar"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/topbarbg"
+        android:focusable="true"
+        android:focusableInTouchMode="true" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_margin="0dp"
+            android:gravity="center"
+            android:padding="0dp"
+            android:text="选择发布类别"
+            android:textColor="#ffffffff"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/topbar_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_alignParentLeft="true"
+            android:src="@drawable/topbarcancel_selector" 
+            android:layout_margin="4dp"/>
+    </RelativeLayout>
+    <ListView android:layout_width="fill_parent" android:layout_height="fill_parent"
+        android:background="#ffffffff" android:divider="#ff777777" android:dividerHeight="2dp"
+        android:id="@+id/messagefiltercatologue_listview"/>
+
+</LinearLayout>

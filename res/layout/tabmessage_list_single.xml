@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"  
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"    
+      >
+      
+    
+    <LinearLayout
+        android:id="@+id/tabheadlayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal" >
+        
+        <RelativeLayout  
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            >
+             <TextView
+            android:id="@+id/tabmessage_list_single_title_textview"
+            android:layout_alignParentLeft="true"         
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"            
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:textColor="#ff333333"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/tabmessage_list_single_content"
+            android:layout_width="wrap_content"
+            android:layout_height="30sp"
+            android:layout_alignLeft="@id/tabmessage_list_single_title_textview"
+            android:layout_below="@id/tabmessage_list_single_title_textview"
+            android:ellipsize="end"
+            android:gravity="top"
+            android:maxHeight="30sp"
+            android:textColor="@color/grey"
+            android:textSize="12sp" />
+            
+            
+            
+        </RelativeLayout>
+	<RelativeLayout   
+	    android:id="@+id/typeimagelayout"
+	    android:layout_width="80dp"
+	    android:layout_height="wrap_content"
+	    android:layout_weight="1"
+	    >
+	     <ImageView
+            android:id="@+id/typeimage"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:visibility="invisible"             
+            />	    
+	</RelativeLayout>
+       
+
+       
+    </LinearLayout>
+      
+ 
+<TextView
+            android:id="@+id/tabmessage_list_single_cattitle_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/tabheadlayout"
+            android:layout_below="@id/tabheadlayout"
+            android:layout_marginTop="2dp"
+            android:layout_alignParentBottom="true"
+            android:gravity="left"            
+            android:text=""
+            android:textColor="@color/bule"
+            android:textSize="13sp"
+            android:textStyle="normal"            
+            android:singleLine="true"            
+            android:ellipsize="end"
+             />
+    
+     <TextView
+            android:id="@+id/tabmessage_list_infotype"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"     
+            android:layout_centerHorizontal="true"       
+            android:gravity="center_horizontal"           
+            android:text=""
+            android:textColor="@color/bule"
+            android:textSize="13sp"
+            android:textStyle="normal"
+            android:visibility="visible" />
+     
+      <TextView
+            android:id="@+id/tabmessage_list_single_time_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="8dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignRight="@id/typeimage"
+            android:textColor="@color/bule"
+            android:textSize="13sp"
+            android:textStyle="normal" />
+    
+    
+</RelativeLayout>

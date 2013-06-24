@@ -1,0 +1,16 @@
+<resources>
+
+    <string name="app_name">北京服务您</string>
+	<string name="app_ver">当前版本 1.3</string>
+	<string name="commentstr">非常感谢您使用“北京服务您”测试版软件。期待您能够留下宝贵的意见和建议，
+	    我们将认真对待您的每一条建议，不断改善我们的服务。</string>
+    <string name="commentstr2">非常感谢您使用“北京服务您”测试版软件。期待您能够留下宝贵的意见和建议，您的建议对我们非常重要。
+	    我们将认真对待您的每一条建议，不断改善我们的服务。</string>
+	<string name="first_cat">您订阅通知后，系统会自动向您推送您订阅的通知信息，所有的通知信息都是免费的，但是可能会产生移动数据流量。</string>
+	<string name="deletemessage">您确定要删除此通知</string>
+	<string name="xiexie">感谢您使用“北京服务您”软件。“北京服务您”目前仍在测试阶段，我们正在努力丰富该软件的功能与体验。</string>
+	<string name="instruction">互动目前仅限于收集用户就软件功能改善方面的意见和建议,未来我们将不断优化互动频道的功能。我们真诚期待您留下宝贵的意见和建议，帮助我们完善软件和服务。</string>
+	<string name="jieshao">就用户普遍关心的问题，我们将及时在回复栏目中予以解答，欢迎大家关注。</string>
+	
+	<string name="hudonghint">请输入您的反馈意见和建议.....</string>
+</resources>

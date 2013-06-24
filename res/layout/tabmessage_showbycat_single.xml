@@ -1,0 +1,125 @@
+
+	
+	<RelativeLayout
+	    xmlns:android="http://schemas.android.com/apk/res/android"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:padding="4dp"
+	     >
+	    
+	    <TextView
+	        android:id="@+id/tabmessage_title_textview"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentLeft="true"
+	        android:layout_marginLeft="5dp"
+	        android:layout_marginRight="30dp"
+	        android:text="title"
+	        android:textColor="#ff333333"
+	        android:textSize="18sp"
+	        android:maxLength="9"
+	        android:layout_marginTop="10dp"
+	        />
+
+	   <TextView  
+	       android:id="@+id/tiananmen"
+	       android:layout_width="wrap_content"
+	       android:layout_height="wrap_content"
+	       android:layout_alignBottom="@id/tabmessage_title_textview"
+	       android:text="市园林绿化局"
+	       android:textColor="#ff333333"
+	       android:textSize="18sp"
+	       android:layout_alignParentRight="true"
+	       android:layout_marginRight="10dp"	
+	       android:visibility="invisible"       
+	       />
+
+	    <LinearLayout
+	        android:id="@+id/monthlayout"
+	        android:layout_alignBottom="@id/tabmessage_title_textview"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignLeft="@id/tiananmen"	       
+	        android:orientation="horizontal" >
+
+	        <TextView
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:text="本月 ："
+	            android:textColor="@color/grey"	        
+	            android:textSize="14sp"	            
+	             />
+
+	        <TextView
+	            android:id="@+id/tabmessage_showbycat_today_num"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:text="0"
+	            android:textColor="@color/grey"	
+	            android:textSize="14sp" />
+
+	        <TextView
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:text="条"
+	           android:textColor="@color/grey"	        
+	            android:textSize="14sp" />
+	    </LinearLayout>
+
+	     <LinearLayout
+	        android:id="@+id/dingyuncount"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignLeft="@id/tabmessage_title_textview"
+	        android:layout_below="@id/monthlayout"
+	        android:orientation="horizontal" >
+
+	        <TextView
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:text="订阅人数 :"
+	            android:textColor="@color/grey"	            
+	            android:textSize="14sp" />
+
+	        <TextView
+	            android:id="@+id/showbycat_total_num"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:text="0"
+	            android:textColor="@color/grey"	        
+	            android:textSize="14sp" />
+
+	        
+	    </LinearLayout>
+
+	    <LinearLayout
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignLeft="@id/monthlayout"
+	        android:layout_below="@id/monthlayout"	       
+	        android:orientation="horizontal" >
+
+	        <TextView
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:text="总计 ："
+	            android:textColor="@color/grey"	        
+	            android:textSize="14sp" />
+
+	        <TextView
+	            android:id="@+id/tabmessage_showbycat_unread_num"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:text="0"
+	            android:textColor="@color/grey"	        
+	            android:textSize="14sp" />
+
+	        <TextView
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:text="条"
+	           android:textColor="@color/grey"	        
+	            android:textSize="14sp" />
+	    </LinearLayout>
+
+	</RelativeLayout>

@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+     >
+    <RelativeLayout
+        android:id="@+id/tabmessage_topbar"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/topbarbg_nocorner"
+        android:focusable="true"
+        android:focusableInTouchMode="true" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_margin="0dp"
+            android:gravity="center"
+            android:padding="0dp"
+            android:text="查询"
+            android:textColor="#ffffffff"
+            android:textSize="22sp"
+           />
+        
+      
+	
+    </RelativeLayout>
+	<RelativeLayout  
+	    android:id="@+id/select_serch_bar"
+	    android:layout_below="@id/tabmessage_topbar"
+	    android:layout_width="match_parent"
+	    android:layout_height="45dp"
+	    android:background="@drawable/subnavi_bg"	 >
+       <ImageView   
+           android:layout_width="240dp"
+           android:layout_height="40dp"
+           android:layout_marginTop="3dp"
+           android:background="@drawable/search_bagroud"     
+           android:layout_marginLeft="5dp"    
+           />
+	      
+	    
+	    <TextView  
+	         android:id="@+id/serch_commitbutton"
+	         android:layout_width="50dp"
+	         android:layout_height="30dp"
+	         android:layout_centerVertical="true"
+	         android:layout_alignParentRight="true"
+	         android:layout_marginRight="15dp"
+	         android:text="查询"
+	         android:gravity="center"
+	         android:textSize="14sp"
+	         android:textColor="@color/white"	         
+	         android:background="@drawable/button1bg_selector"	         
+	        />
+<!--
+	    <LinearLayout
+	        android:id="@+id/serch_pannel"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentLeft="true"
+	        android:layout_centerVertical="true"
+	        android:orientation="horizontal" >
+
+	        <ImageView
+	            android:id="@+id/serch_big"
+	            android:layout_width="15dp"
+	            android:layout_height="15dp"
+	            android:layout_gravity="center"
+	            android:layout_marginLeft="20dp"
+	            android:background="@drawable/search_big" />
+
+	        <ImageView
+	            android:id="@+id/sanjiao_image"
+	            android:layout_width="8dp"
+	            android:layout_height="8dp"
+	            android:layout_gravity="center"
+	            android:background="@drawable/sanjiaoimage" />
+	    </LinearLayout>
+  -->	           
+	       
+	    <EditText   
+	        android:id="@+id/search_view"
+	        android:layout_marginTop="5dp"
+	        android:layout_marginBottom="5dp"	        
+	        android:layout_width="220dp"
+	        android:layout_height="50dp"
+	        android:layout_marginLeft="15dp"
+	        android:hint="通知查询"	       
+	        android:background="@null"	 	              
+	        />     
+
+	</RelativeLayout>
+	<!-- 
+	<RelativeLayout   
+	    android:id="@+id/search_type_layout"
+	    android:layout_width="260dp"
+	    android:layout_height="50dp"
+	    android:background="@drawable/frame_layout"
+	    android:layout_marginLeft="18dp"
+	    android:layout_marginTop="70dp" 
+	    android:visibility="invisible" 	    
+	    >
+	    <ImageView   
+	        android:id="@+id/message_search_image"	        
+	        android:layout_marginTop="11dp"
+	        android:layout_width="30dp"
+	        android:layout_height="30dp"
+	        android:layout_marginLeft="40dp"
+	        android:background="@drawable/messageimage"
+	        />
+	    
+	    
+	    <ImageView   
+	        android:id="@+id/app_search_image"
+	        android:layout_alignTop="@id/message_search_image"
+	        android:layout_width="30dp"
+	        android:layout_height="30dp"       
+	        android:background="@drawable/appimage"
+	        android:layout_centerInParent="true"	      
+	        />
+	    
+	     <ImageView
+	         android:id="@+id/baike_search_image"
+	         android:layout_width="30dp"
+	         android:layout_height="30dp"
+	         android:layout_alignParentRight="true"
+	         android:layout_alignTop="@id/message_search_image"
+	         android:layout_marginRight="40dp"
+	         android:background="@drawable/baikeimage" />
+	    
+	</RelativeLayout>  -->
+	<!-- <ExpandableListView
+        android:id="@+id/yujingtypelistview"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_below="@id/select_serch_bar"        
+        android:layout_marginTop="10dp"
+        android:cacheColorHint="#00000000"
+        android:divider="@color/yuandivider"
+        android:dividerHeight="1dp"
+        android:visibility="invisible"
+         />   -->
+
+	<RelativeLayout
+	    android:id="@+id/alertlayout"
+	    android:layout_width="160dp"
+	    android:layout_height="60dp"
+	    android:layout_below="@id/select_serch_bar"
+	    android:layout_marginLeft="10dp"
+	    android:layout_marginTop="10dp"
+	    android:visibility="visible" >
+
+	    <ImageView
+	        android:id="@+id/alertimage"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_marginTop="3dp"
+	        android:background="@drawable/down" />
+
+	    <TextView
+	        android:id="@+id/alerttextview"	        
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"	        
+	        android:layout_marginLeft="20dp"	        
+	        android:gravity="top"
+	        android:text="预警信号"
+	        android:textColor="@color/black"
+	        android:textSize="19dp" />
+	</RelativeLayout>
+	
+	<ListView
+        android:id="@+id/yujingtypelistview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"        
+        android:layout_below="@id/alertlayout"
+        android:cacheColorHint="#00000000"
+        android:divider="@color/yuandivider"
+        android:dividerHeight="1dp"
+        android:visibility="invisible"
+         /> 
+	
+	<ListView
+	    android:id="@+id/message_listivew"
+	    android:layout_width="match_parent"
+	    android:layout_below="@id/select_serch_bar"	  	    
+	    android:layout_height="wrap_content"	   
+	    android:cacheColorHint="#00000000"
+	    android:divider="@color/yuandivider"
+	    android:dividerHeight="1dp"
+	    android:visibility="invisible" />
+
+</RelativeLayout>

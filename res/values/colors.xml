@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="white">#ffffff</color>
+    <color name="transparent">#00000000</color>
+    <color name="gold">#b89766</color>
+    <color name="dark">#2F4F4F</color>
+    <!--  <color name="red">#FF0000</color>  -->
+    <color name="red">#FF0000</color>
+    <color name="bule">#1874CD</color>
+    <color name="grey">#969696</color>
+	<color name="deepred">#CD0000</color>
+	<color name="black">#030303</color>
+	<color name="bacgroud_grep">#F0F0F0</color>
+	<color name="dividercolor">#F0F0F0</color>
+	<color name="yuandivider">#E3E3E3</color>
+	<color name="list_border_light">#d02e2e</color>
+	<color name="list_border_dark">#971b1e</color>
+	<color name="action_bar_tint">#A8C24E</color>
+	<color name="action_bar_divider_tint">#7FFF</color>
+	<color name="commentbackground">#fff5f5f5</color>
+	<color name="juhong">#FFA500</color>
+	<color name="layoutbackground">#fff5f5f5</color>
+	
+	
+	<color name="text_color_gray_light">#b3b3b3</color>
+	<color name="text_color_gray">#868686</color>
+	<color name="text_color_white">#FFFFFF</color>
+	<color name="text_color_black">#000000</color>
+	<color name="text_color_dark_red">#8e1e1a</color>
+	<color name="text_color_search_hint">#FF9797</color>
+	
+    <color name="default_line_indicator_selected_color">#930306</color>
+    <color name="default_line_indicator_unselected_color">#B4B1AE</color>
+    
+    <color name="preference_list_divider">#ececec</color>
+</resources>

@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/tabinteractivelayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff5f5f5"
+    android:orientation="vertical"
+    >
+
+    <RelativeLayout
+        android:id="@+id/tabmessage_topbar"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/topbarbg_nocorner"
+        android:focusable="true"
+        android:focusableInTouchMode="true" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_margin="0dp"
+            android:gravity="center"
+            android:padding="0dp"
+            android:text="互动"
+            android:textColor="#ffffffff"
+            android:textSize="22sp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/titlelayout"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@id/tabmessage_topbar"
+        android:background="@color/white"
+        android:orientation="horizontal" >
+
+        <RelativeLayout
+            android:id="@+id/suggstionlayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" >
+
+            <TextView
+                android:id="@+id/suggstiontext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="5dp"
+                android:gravity="center"
+                android:text="建议"
+                android:textColor="@color/red"
+                android:textSize="16sp" />
+
+            <ImageView
+                android:id="@+id/suggstionline"
+                android:layout_width="70dp"
+                android:layout_height="3dp"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:background="@color/deepred" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/aplaylayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" >
+
+            <TextView
+                android:id="@+id/aplaytextview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="5dp"
+                android:gravity="center"
+                android:text="回复"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <ImageView
+                android:id="@+id/aplayline"
+                android:layout_width="70dp"
+                android:layout_height="3dp"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:background="@color/deepred"
+                android:visibility="invisible" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/dpimageview"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_below="@id/titlelayout"
+        android:background="@color/text_color_gray" />
+
+    <ListView
+        android:id="@+id/repaylistview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/dpimageview"
+        android:cacheColorHint="@color/white"
+        android:divider="@color/dividercolor"
+        android:dividerHeight="1dp"
+        android:visibility="invisible" 
+        android:background="@color/white"
+        />
+    
+    <ImageView  
+        android:id="@+id/imageline"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/dividercolor"
+        android:layout_below="@id/repaylistview"
+        android:visibility="invisible"
+        />
+  
+    <RelativeLayout
+        android:id="@+id/suggstionfinallayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/dpimageview"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp" >
+
+        <TextView
+            android:id="@+id/xiexietextview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:text="@string/xiexie"
+            android:textColor="@color/black"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/intructtextview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/xiexietextview"
+            android:layout_marginTop="2dp"
+            android:text="@string/instruction"
+            android:textColor="@color/black"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/jieshaotextview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/intructtextview"
+            android:layout_marginTop="2dp"
+            android:text="@string/jieshao"
+            android:textColor="@color/black"
+            android:textSize="15sp" />
+
+        <EditText
+            android:id="@+id/commentedit"
+            android:layout_width="fill_parent"
+            android:layout_height="80dp"
+            android:layout_below="@id/jieshaotextview"
+            android:layout_marginTop="10dp"
+            android:gravity="left|top"
+            android:hint="@string/hudonghint"            
+            android:textSize="15sp"
+            android:maxHeight="80dp"
+             />
+
+        <TextView
+            android:id="@+id/addphotobutton"
+            android:layout_width="180dp"
+            android:layout_height="45dp"
+            android:layout_below="@id/commentedit"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/buttonbg_selector"
+            android:gravity="center"
+            android:text="发送"
+            android:textColor="@color/white"
+            android:textSize="18dp" />
+
+        <ImageView
+            android:id="@+id/tabinterimage"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_alignLeft="@id/commentedit"
+            android:layout_alignTop="@id/addphotobutton"
+            android:layout_marginLeft="10dp"
+            android:background="@color/commentbackground" />
+    </RelativeLayout>
+
+   
+
+</RelativeLayout>

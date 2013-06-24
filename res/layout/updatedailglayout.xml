@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="尊敬的用户，您好！"
+        android:textColor="@color/white"
+        android:textSize="16sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="    感谢您对“北京服务您”一直以来的支持。"
+        android:textColor="@color/white"
+        android:textSize="16sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="   系统于2013年5月19日进行了升级优化。升级功能包括："
+        android:textColor="@color/white"
+        android:textSize="16sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="    1、增加通知管理功能"
+        android:textColor="@color/white"
+        android:textSize="16sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="    您可以把通知信息设置为已读状态或者删除，支持单条操作和批量操作。"
+        android:textColor="@color/white"
+        android:textSize="16sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="    2、通知订阅频道优化"
+        android:textColor="@color/white"
+        android:textSize="16sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="    仅预警信息和系统公告属于默认定制，其他信息需要主动订阅。软件升级后，建议您根据需要重新订阅。"
+        android:textColor="@color/white"
+        android:textSize="16sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="    再次感谢您使用“北京服务您”，您的支持、鼓励和建议将帮助我们做得更好！"
+        android:textColor="@color/white"
+        android:textSize="16sp" />
+
+</LinearLayout>

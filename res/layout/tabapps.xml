@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:background="#fff5f5f5">
+    <RelativeLayout
+        android:id="@+id/tabmessage_topbar"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/topbarbg_nocorner"
+        android:focusable="true"
+        android:focusableInTouchMode="true" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_margin="0dp"
+            android:gravity="center"
+            android:padding="0dp"
+            android:text="应用"
+            android:textColor="#ffffffff"
+            android:textSize="22sp"
+            />
+	 
+    </RelativeLayout>
+    
+    <LinearLayout 
+        android:id="@+id/imagelayout"
+        android:layout_below="@id/tabmessage_topbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal"               
+        ><LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_horizontal" >
+
+            <ImageView
+                android:id="@+id/woaibeijing"
+                android:layout_width="60dp"
+                android:layout_height="60dp"                
+                android:background="@drawable/ilovebeijing" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" 
+            android:gravity="center_horizontal">
+
+            <ImageView
+                android:id="@+id/lukuangyan"
+                android:layout_width="60dp"
+                android:layout_height="60dp"               
+                android:background="@drawable/eyeroad" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" 
+            android:gravity="center_horizontal">
+
+            <ImageView
+                android:id="@+id/airzhiliang"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:background="@drawable/beijingair" />           
+        </LinearLayout>
+</LinearLayout>
+
+<LinearLayout
+        android:id="@+id/appnameline"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imagelayout"
+        android:layout_marginTop="3dp"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_horizontal" >
+
+            <TextView
+                android:id="@+id/lovebeijingapp"
+                android:layout_width="80dp"
+                android:layout_height="20dp"
+                android:background="@color/bule"
+                android:gravity="center"
+                android:text="我爱北京"
+                android:textColor="@color/white"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_horizontal" >
+
+            <TextView
+                android:layout_width="80dp"
+                android:layout_height="20dp"
+                android:background="@color/bule"
+                android:gravity="center"
+                android:text="路况交通眼"
+                android:textColor="@color/white"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_horizontal" >
+
+            <TextView
+                android:layout_width="80dp"
+                android:layout_height="20dp"
+                android:background="@color/bule"
+                android:gravity="center"
+                android:text="北京空气质量"
+                android:textColor="@color/white"
+                android:textSize="12sp" />
+        </LinearLayout>   
+       
+   
+    </LinearLayout>
+    <LinearLayout 
+        android:id="@+id/fanyuanimagelayout"
+        android:layout_below="@id/appnameline"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+         > 
+
+         <LinearLayout
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_weight="1"
+             android:gravity="center_horizontal"
+              >
+
+             <ImageView
+                 android:id="@+id/beijingfayuan"
+                 android:layout_width="60dp"
+                 android:layout_height="60dp"
+                 android:background="@drawable/beijingfayuan"
+                  />
+         </LinearLayout>
+      	
+       
+           <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" 
+            android:gravity="center_horizontal">
+
+            <ImageView
+                android:visibility="invisible"
+                android:layout_width="60dp"
+                android:layout_height="60dp"               
+                android:background="@drawable/eyeroad" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" 
+            android:gravity="center_horizontal">
+
+            <ImageView
+                android:visibility="invisible"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:background="@drawable/beijingair" />           
+        </LinearLayout> 
+            
+            
+         
+        
+    </LinearLayout>
+ 	
+ 	
+ 	   <LinearLayout
+ 	        android:layout_marginTop="3dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"              
+            android:layout_below="@id/fanyuanimagelayout"
+            android:orientation="horizontal"
+            >
+
+            <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_horizontal" >
+
+            <TextView
+                
+                android:layout_width="80dp"
+                android:layout_height="20dp"
+                android:background="@color/bule"
+                android:gravity="center"
+                android:text="北京法院"
+                android:textColor="@color/white"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_horizontal" >
+
+            <TextView
+                android:visibility="invisible"
+                android:layout_width="80dp"
+                android:layout_height="20dp"
+                android:background="@color/bule"
+                android:gravity="center"
+                android:text="路况交通眼"
+                android:textColor="@color/white"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_horizontal" >
+
+            <TextView
+                android:visibility="invisible"
+                android:layout_width="80dp"
+                android:layout_height="20dp"
+                android:background="@color/bule"
+                android:gravity="center"
+                android:text="北京空气质量"
+                android:textColor="@color/white"
+                android:textSize="12sp" />
+        </LinearLayout>   
+        </LinearLayout>   
+ 	
+ 
+    
+   
+    
+    <TextView   
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="5dp"
+            android:text="正在优化中，敬请期待......"
+            android:textColor="@color/black"
+            android:textSize="14sp"   
+                          
+            />
+
+</RelativeLayout>

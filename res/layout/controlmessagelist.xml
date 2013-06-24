@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="5dp"
+    android:paddingBottom="5dp"
+    android:paddingLeft="8dp"
+    android:paddingRight="8dp"
+     >
+  <CheckBox
+        android:id="@+id/mydelete_checkbox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"   
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"       
+        style="@style/mycheckbox"
+        />
+        
+   	   <TextView
+            android:id="@+id/deletesrcinfo_title_textview"
+            android:layout_toRightOf="@id/mydelete_checkbox"        
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"            
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:textColor="#ff333333"
+            android:textSize="16sp" />
+        <TextView
+            android:id="@+id/deletesrcinfo_content"
+            android:layout_width="wrap_content"
+            android:layout_height="30sp"
+            android:layout_alignLeft="@id/deletesrcinfo_title_textview"
+            android:layout_below="@id/deletesrcinfo_title_textview"
+            android:layout_marginTop="2dp"
+            android:ellipsize="end"
+            android:gravity="top"
+            android:maxHeight="30sp"
+            android:textColor="@color/grey"
+            android:textSize="12sp" />
+   
+
+</RelativeLayout>

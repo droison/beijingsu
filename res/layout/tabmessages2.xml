@@ -1,0 +1,553 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+   
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="40dp"
+        android:layout_alignParentTop="true" android:background="@drawable/topbarbg_nocorner"
+        android:id="@+id/tabmessage_topbar" android:focusable="true"
+        android:focusableInTouchMode="true"       
+        ><TextView
+            android:id="@+id/dingyueimage"
+            android:layout_width="60dp"
+            android:layout_height="30dp"
+            android:layout_margin="4dp"           
+            android:background="@drawable/return_button_selector"
+            android:gravity="center"
+            android:text="订阅"
+            android:textColor="#ffffffff"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/tabmessages_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_margin="0dp"
+            android:gravity="center"
+            android:padding="0dp"
+            android:text="通知"
+            android:textColor="#ffffffff"
+            android:textSize="20sp"
+             />
+
+        <TextView
+            android:id="@+id/controlbutton"
+            android:layout_width="60dp"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_margin="4dp"           
+            android:background="@drawable/return_button_selector"
+            android:gravity="center"
+            android:text="管理"
+            android:textColor="#ffffffff"
+            android:textSize="15sp" />
+
+        <ImageView
+            android:id="@+id/searchbutton"
+            android:layout_width="60dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="5dp"
+            android:layout_toLeftOf="@id/top_show_curvepage"
+            android:background="@drawable/search_button_selector"
+            android:visibility="invisible"
+             />
+
+    </RelativeLayout><!--
+<RelativeLayout  
+        android:id="@+id/search_top"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:background="@drawable/topbarbg_nocorner"
+        android:visibility="invisible"
+        ><TextView
+            android:id="@+id/return_message"
+            android:layout_width="60dp"
+            android:layout_height="30dp"
+            android:layout_margin="4dp"
+            android:layout_marginTop="7dp"
+            android:background="@drawable/topbarback_selector"
+            android:gravity="center"
+            android:text="返回"
+            android:textColor="#ffffffff"
+            android:textSize="15sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_margin="0dp"
+            android:gravity="center"
+            android:padding="0dp"
+            android:text="搜索"
+            android:textColor="#ffffffff"
+            android:textSize="22sp"
+            />
+</RelativeLayout>
+    -->
+
+   <!--   
+    <RelativeLayout
+        android:id="@+id/search_bar"
+        android:layout_width="fill_parent"
+        android:layout_height="45dp"
+        android:layout_below="@id/search_top"
+        android:background="@drawable/searchbar_bg"
+        android:paddingBottom="3dp"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:paddingTop="2dp"
+        android:visibility="invisible" >       
+
+            <EditText
+                android:id="@+id/serch_edit"
+                android:layout_width="220dp"
+                android:layout_height="wrap_content"                             
+                android:hint="请输入您要查找的主题" />
+
+            <TextView
+                android:id="@+id/message_searchview"
+                android:layout_width="60dp"
+                android:layout_height="30dp" 
+                android:layout_marginTop="2dp"                
+                android:background="@drawable/button1bg_selector"
+                android:layout_alignParentRight="true"                
+                android:layout_marginRight="10dp"                
+                android:gravity="center"
+                android:text="搜索"
+                android:textColor="#ffffffff"
+                android:textSize="15sp" />
+      
+    </RelativeLayout>   -->
+    
+   <LinearLayout
+	    android:id="@+id/tabmessage_searchbar"
+	    android:layout_width="match_parent"
+	    android:layout_height="36dp"
+	    android:orientation="horizontal"
+	    android:layout_below="@id/tabmessage_topbar"	
+	    android:background="@color/white"      
+	     >
+        
+        <RelativeLayout    
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            >
+            <TextView
+	        android:id="@+id/newmessagetext"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"	        
+	        android:layout_marginTop="5dp"
+	        android:text="最新"
+	        android:gravity="center"
+	        android:layout_centerInParent="true"
+	        android:textColor="@color/red"
+	        android:textSize="16sp"
+	        />
+
+	    <ImageView
+	        android:id="@+id/newmessageline"
+	        android:layout_width="70dp"
+	        android:layout_height="3dp"
+	        android:layout_centerHorizontal="true"
+	        android:layout_alignParentBottom="true"
+	        android:background="@color/deepred" />
+           
+	     
+            
+        </RelativeLayout>   
+        
+          <RelativeLayout    
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            >
+            <TextView
+	        android:id="@+id/departmenttext"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_centerInParent="true"
+	        android:gravity="center"
+	        android:text="单位"
+	        android:textColor="@color/black"
+	        android:textSize="16sp"
+	      />
+
+	    <ImageView
+	        android:id="@+id/departmentline"
+	        android:layout_width="70dp"
+	        android:layout_height="3dp"
+	        android:layout_alignParentBottom="true"
+	        android:layout_centerHorizontal="true"       
+	        android:background="@color/deepred"
+	        android:visibility="invisible" />
+            
+            
+        </RelativeLayout>         
+       </LinearLayout> 
+	 <ImageView	  
+	        android:id="@+id/dpimageview" 
+	        android:layout_below="@id/tabmessage_searchbar"     
+	        android:layout_width="match_parent"
+	        android:layout_height="2dp"	         
+	        android:background="@color/text_color_gray" /> 
+
+	<FrameLayout
+	    android:layout_width="fill_parent"
+	    android:layout_height="fill_parent"
+	    android:background="#fff5f5f5" 
+	    android:layout_below="@id/dpimageview" >
+
+	    <com.mine.pulltorefresh.DragListView
+	        android:id="@+id/tabmessage_listview"
+	        android:layout_width="fill_parent"
+	        android:layout_height="fill_parent"	        
+	        android:divider="@color/dividercolor"
+	        android:dividerHeight="1dp" 
+	        android:visibility="visible"
+	        android:descendantFocusability="blocksDescendants"
+	        android:cacheColorHint="#00000000"	 
+	        android:background="@color/white"     	      
+	        />
+
+	    <ListView
+	        android:id="@+id/tabmessage_showbycat_listview"
+	        android:layout_width="fill_parent"
+	        android:layout_height="fill_parent"
+	        android:background="@color/white" 
+	        android:divider="@color/dividercolor"
+	        android:dividerHeight="1dp"
+	        android:visibility="invisible"
+	        android:descendantFocusability="blocksDescendants"
+	        android:cacheColorHint="#00000000"
+	            
+	         />
+	  
+	    
+	</FrameLayout>
+    
+    <View android:layout_width="fill_parent" android:layout_height="fill_parent"
+        android:background="#88000000" android:id="@+id/tabmessage_mask"
+        android:layout_below="@id/tabmessage_topbar" android:visibility="gone"/>
+    <View android:layout_width="fill_parent" android:layout_height="fill_parent"
+        android:background="#00000000" android:id="@+id/tabmessage_titlemenu_mask"
+        android:layout_below="@id/tabmessage_topbar" android:visibility="gone"/>
+    
+    
+    <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+        android:orientation="vertical" android:id="@+id/tabmessage_filter_panel"
+        android:gravity="center_horizontal" android:layout_below="@id/tabmessage_topbar"
+        android:background="#fff4f4f4" android:visibility="gone">
+        <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+            android:orientation="horizontal" android:gravity="left"
+            android:layout_marginLeft="20dp" android:layout_marginRight="20dp"
+            android:layout_marginTop="20dp">
+            <ImageView android:layout_width="20dp" android:layout_height="20dp"
+                android:src="@drawable/catologueicon"/>
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:text=" 分类:" android:textColor="#ff333333" android:textSize="16sp"/>
+        </LinearLayout>
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="40dp"
+            android:layout_marginLeft="20dp" android:layout_marginRight="20dp"
+            android:layout_marginTop="10dp" android:background="@drawable/button3bg_selector"
+            android:id="@+id/tabmessage_filter_cat_panel">
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:id="@+id/tabmessage_filter_cat_panel_textview"
+                android:text="所有分类" android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true" android:layout_marginLeft="10dp"
+                android:textColor="#ff000000" android:textStyle="bold"
+                android:textSize="17sp"/>
+            <ImageView android:layout_width="20dp" android:layout_height="wrap_content"
+                android:src="@drawable/arrawright" android:layout_centerVertical="true"
+                android:layout_alignParentRight="true" android:layout_marginRight="10dp"/>
+        </RelativeLayout>
+         <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+            android:orientation="horizontal" android:gravity="left"
+            android:layout_marginLeft="20dp" android:layout_marginRight="20dp"
+            android:layout_marginTop="20dp">
+            <ImageView android:layout_width="20dp" android:layout_height="20dp"
+                android:src="@drawable/timeicon"/>
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:text=" 发布时间:" android:textColor="#ff333333" android:textSize="16sp"/>
+        </LinearLayout>
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="40dp"
+            android:layout_marginLeft="20dp" android:layout_marginRight="20dp"
+            android:layout_marginTop="10dp" android:background="@drawable/button3bg_selector"
+            android:id="@+id/tabmessage_filter_publishtime_panel">
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:id="@+id/tabmessage_filter_publishtime_panel_textview"
+                android:text="所有时间" android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true" android:layout_marginLeft="10dp"
+                android:textColor="#ff000000" android:textStyle="bold"
+                android:textSize="17sp"/>
+            <ImageView android:layout_width="20dp" android:layout_height="wrap_content"
+                android:src="@drawable/arrawright" android:layout_centerVertical="true"
+                android:layout_alignParentRight="true" android:layout_marginRight="10dp"/>
+        </RelativeLayout>
+        <TextView android:layout_width="200dp" android:layout_height="50dp"
+            android:text="确定" android:id="@+id/tabmessage_filter_panel_ok_button"
+            android:gravity="center" android:textColor="#ffffffff"
+            android:textSize="20sp" android:background="@drawable/button1bg_selector"
+            android:layout_marginTop="20dp" />
+        <ImageView android:layout_width="fill_parent" android:layout_height="18dp"
+            android:src="@drawable/wrapupicon" android:layout_marginTop="10dp"
+            android:id="@+id/tabmessage_filter_cat_panel_wrapup_button"
+            android:layout_marginBottom="5dp"/>
+    </LinearLayout>
+    
+   <!--  
+    <LinearLayout android:layout_width="200dp" android:layout_height="197dp"
+	    android:orientation="vertical" android:background="@drawable/messages_title_more_bg"
+	    android:layout_centerHorizontal="true" android:layout_alignParentTop="true"
+	    android:layout_marginTop="35dp" android:id="@+id/messages_title_menu_panel"
+	    android:paddingTop="15dp" android:visibility="gone">
+	    <LinearLayout android:layout_width="fill_parent" android:layout_height="40dp"
+	        android:orientation="horizontal" android:id="@+id/messages_titlemenu_orderbytime"
+	        android:gravity="center_vertical" android:layout_marginLeft="10dp"
+	        android:layout_marginRight="10dp" android:background="@drawable/messages_titlemenu_selected_bg">
+	        <ImageView android:layout_width="25dp" android:layout_height="25dp"
+	            android:src="@drawable/messages_titlemenu_time_on"
+	            android:id="@+id/messages_titlemenu_orderbytime_icon"
+	            android:layout_marginLeft="20dp"/>
+	        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+	            android:text="时间排序" android:textColor="#ffffffff"
+	            android:textStyle="bold" android:textSize="17sp"
+	            android:layout_marginLeft="20dp" android:padding="0dp"/>
+	    </LinearLayout>
+	    <View android:layout_width="fill_parent" android:layout_height="2dp"
+	        android:layout_marginLeft="10dp" android:layout_marginRight="10dp"
+	        android:background="#ffcccccc"/>
+	    <LinearLayout android:layout_width="fill_parent" android:layout_height="40dp"
+	        android:orientation="horizontal" android:id="@+id/messages_titlemenu_orderbydepartment"
+	        android:gravity="center_vertical" android:layout_marginLeft="10dp"
+	        android:layout_marginRight="10dp" android:background="#00000000">
+	        <ImageView android:layout_width="25dp" android:layout_height="25dp"
+	            android:src="@drawable/messages_titlemenu_department_off"
+	            android:id="@+id/messages_titlemenu_orderbydepartment_icon"
+	            android:layout_marginLeft="20dp"/>
+	        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+	            android:text="部门查看" android:textColor="#ffffffff"
+	            android:textStyle="bold" android:textSize="17sp"
+	            android:layout_marginLeft="20dp" android:padding="0dp"/>
+	    </LinearLayout>
+	    <View android:layout_width="fill_parent" android:layout_height="2dp"
+	        android:layout_marginLeft="10dp" android:layout_marginRight="10dp"
+	        android:background="#ffcccccc"/>
+	    <LinearLayout android:layout_width="fill_parent" android:layout_height="40dp"
+	        android:orientation="horizontal" android:id="@+id/messages_titlemenu_msg_dingzhi"
+	        android:gravity="center_vertical" android:layout_marginLeft="10dp"
+	        android:layout_marginRight="10dp" android:background="#00000000">
+	        <ImageView android:layout_width="25dp" android:layout_height="25dp"
+	            android:src="@drawable/messages_titlemenu_dingzhi_off"
+	            android:id="@+id/messages_titlemenu_msg_dingzhi_icon"
+	            android:layout_marginLeft="20dp"/>
+	        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+	            android:text="信息订阅" android:textColor="#ffffffff"
+	            android:textStyle="bold" android:textSize="17sp"
+	            android:layout_marginLeft="20dp" android:padding="0dp"/>
+	    </LinearLayout>
+
+	    <View android:layout_width="fill_parent" android:layout_height="2dp"
+	        android:layout_marginLeft="10dp" android:layout_marginRight="10dp"
+	        android:background="#ffcccccc"/>
+	    <LinearLayout android:layout_width="fill_parent" android:layout_height="40dp"
+	        android:orientation="horizontal" android:id="@+id/messages_titlemenu_bashdelete"
+	        android:gravity="center_vertical" android:layout_marginLeft="10dp"
+	        android:layout_marginRight="10dp" android:background="#00000000">
+	        <ImageView android:layout_width="25dp" android:layout_height="25dp"
+	            android:src="@drawable/messages_titlemenu_delete_off"
+	            android:id="@+id/messages_titlemenu_bashdelete_icon"
+	            android:layout_marginLeft="20dp"/>
+	        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+	            android:text="批量删除" android:textColor="#ffffffff"
+	            android:textStyle="bold" android:textSize="17sp"
+	            android:layout_marginLeft="20dp" android:padding="0dp"/>
+	    </LinearLayout>
+	</LinearLayout> -->
+	
+	<!-- 长按某项 -->
+	<LinearLayout android:layout_width="230dp" android:layout_height="wrap_content"
+	    android:orientation="vertical" android:layout_centerInParent="true"
+	    android:id="@+id/message_longclick_menu_panle"
+	    android:background="@drawable/menu_bg_shadow" android:padding="8dp"
+	    android:visibility="gone">
+	    <RelativeLayout android:layout_width="fill_parent" android:layout_height="50dp"
+	        android:background="#ff000000" >
+	       <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+	        android:text="操作" android:textColor="#ffffffff" android:textSize="19sp"
+	        android:textStyle="bold" android:layout_alignParentLeft="true"
+	        android:layout_centerVertical="true"
+	        android:gravity="left|center_vertical" android:paddingLeft="5dp"/> 
+	       <ImageView android:layout_width="20dp" android:layout_height="20dp"
+	           android:src="@drawable/topbarcancel_selector"
+	           android:id="@+id/message_longclick_menu_panle_close"
+	           android:layout_alignParentRight="true"
+	           android:layout_centerVertical="true" android:layout_marginRight="10dp"
+	           android:visibility="gone"/>
+	    </RelativeLayout>
+	    <!--  
+	    <LinearLayout android:layout_width="fill_parent" android:layout_height="60dp"
+	        android:orientation="horizontal" 
+	        android:gravity="center_vertical"
+	        android:id="@+id/message_longclick_menu_comment"
+	        android:background="@drawable/messages_titlemenu_selector">
+	        <ImageView android:layout_width="30dp" android:layout_height="30dp"
+	            android:src="@drawable/messages_longclick_menu_judge_icon"
+	            android:layout_marginLeft="20dp"/>
+	        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+	            android:text="评价信息" android:textColor="#ff000000"
+	            android:textSize="18sp" android:textStyle="bold"
+	            android:layout_marginLeft="20dp"/>
+	    </LinearLayout>
+	    <View android:layout_width="fill_parent" android:layout_height="1dp"
+	        android:background="#ffbbbbbb"
+	       android:layout_marginLeft="2dp" android:layout_marginRight="2dp" />
+	    <LinearLayout android:layout_width="fill_parent" android:layout_height="60dp"
+	        android:orientation="horizontal" 
+	        android:gravity="center_vertical"
+	        android:id="@+id/message_longclick_menu_share"
+	        android:background="@drawable/messages_titlemenu_selector">
+	        <ImageView android:layout_width="30dp" android:layout_height="30dp"
+	            android:src="@drawable/messages_longclick_menu_share_icon"
+	            android:layout_marginLeft="20dp"/>
+	        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+	            android:text="分享信息" android:textColor="#ff000000"
+	            android:textSize="18sp" android:textStyle="bold"
+	            android:layout_marginLeft="20dp"/>
+	    </LinearLayout>
+	    <View android:layout_width="fill_parent" android:layout_height="1dp"
+	        android:background="#ffbbbbbb"
+	        android:layout_marginLeft="2dp" android:layout_marginRight="2dp"/>
+	    -->
+	    <LinearLayout android:layout_width="fill_parent" android:layout_height="60dp"
+	        android:orientation="horizontal"
+	        android:gravity="center_vertical"
+	        android:id="@+id/message_longclick_menu_delete"
+	        android:background="@drawable/messages_titlemenu_selector">
+	        <ImageView android:layout_width="30dp" android:layout_height="30dp"
+	            android:src="@drawable/messages_longclick_menu_delete_icon"
+	            android:layout_marginLeft="20dp"/>
+	        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+	            android:text="删除信息" android:textColor="#ff000000"
+	            android:textSize="18sp" android:textStyle="bold"
+	            android:layout_marginLeft="20dp"/>
+	    </LinearLayout>
+	    
+	    
+	    
+	</LinearLayout>
+	
+	<!-- 分享菜单 -->
+	<LinearLayout android:layout_width="230dp" android:layout_height="wrap_content"
+	    android:orientation="vertical" android:layout_centerInParent="true"
+	    android:id="@+id/message_share_menu_panle"
+	    android:background="@drawable/menu_bg_shadow" android:padding="8dp"
+	    android:visibility="gone">
+	    <RelativeLayout android:layout_width="fill_parent" android:layout_height="50dp"
+	        android:background="#000000">
+	       <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+	        android:text="分享" android:textColor="#ffffffff" android:textSize="19sp"
+	        android:textStyle="bold" android:layout_alignParentLeft="true"
+	        android:layout_centerVertical="true"
+	        android:gravity="left|center_vertical" android:paddingLeft="5dp"/> 
+	       <ImageView android:layout_width="20dp" android:layout_height="20dp"
+	           android:src="@drawable/topbarcancel_selector"
+	           android:id="@+id/message_share_menu_panle_close"
+	           android:layout_alignParentRight="true"
+	           android:layout_centerVertical="true" android:layout_marginRight="10dp"
+	           android:visibility="gone"/>
+	    </RelativeLayout>
+	    
+	    <LinearLayout android:layout_width="fill_parent" android:layout_height="60dp"
+	        android:orientation="horizontal"
+	        android:gravity="center_vertical"
+	        android:id="@+id/message_share_menu_sms"
+	        android:background="@drawable/messages_titlemenu_selector">
+	        <ImageView android:layout_width="30dp" android:layout_height="30dp"
+	            android:src="@drawable/smsicon"
+	            android:layout_marginLeft="20dp"/>
+	        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+	            android:text="短信分享" android:textColor="#ff000000"
+	            android:textSize="18sp" android:textStyle="bold"
+	            android:layout_marginLeft="20dp"/>
+	    </LinearLayout>
+	    <View android:layout_width="fill_parent" android:layout_height="1dp"
+	        android:background="#ffbbbbbb"
+	        android:layout_marginLeft="2dp" android:layout_marginRight="2dp"
+	        />
+	    <LinearLayout android:layout_width="fill_parent" android:layout_height="60dp"
+	        android:orientation="horizontal" 
+	        android:gravity="center_vertical"
+	        android:id="@+id/message_share_menu_weixin"
+	        android:background="@drawable/messages_titlemenu_selector">
+	        <ImageView android:layout_width="30dp" android:layout_height="30dp"
+	            android:src="@drawable/weixinicon"
+	            android:layout_marginLeft="20dp"/>
+	        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+	            android:text="微信分享" android:textColor="#ff000000"
+	            android:textSize="18sp" android:textStyle="bold"
+	            android:layout_marginLeft="20dp"/>
+	    </LinearLayout>
+	    <View android:layout_width="fill_parent" android:layout_height="1dp"
+	        android:background="#ffbbbbbb"
+	        android:layout_marginLeft="2dp" android:layout_marginRight="2dp"/>
+	    <LinearLayout android:layout_width="fill_parent" android:layout_height="60dp"
+	        android:orientation="horizontal" 
+	        android:gravity="center_vertical"
+	        android:id="@+id/message_share_menu_weibo"
+	        android:background="@drawable/messages_titlemenu_selector">
+	        <ImageView android:layout_width="30dp" android:layout_height="30dp"
+	            android:src="@drawable/weiboicon"
+	            android:layout_marginLeft="20dp"/>
+	        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+	            android:text="微博分享" android:textColor="#ff000000"
+	            android:textSize="18sp" android:textStyle="bold"
+	            android:layout_marginLeft="20dp"/>
+	    </LinearLayout>
+	</LinearLayout>	
+	
+	<LinearLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+	    android:id="@+id/curved_page_about_app" android:background="@drawable/abooutappbg"
+	    android:orientation="vertical" android:visibility="invisible">
+	    <RelativeLayout android:layout_width="fill_parent" android:layout_height="40dp"
+        android:layout_alignParentTop="true" android:background="@drawable/topbarbg_nocorner"
+        android:id="@+id/tabmessage_topbar" android:focusable="true"
+        android:focusableInTouchMode="true">
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:padding="0dp" android:layout_margin="0dp"
+            android:text="关于" android:textColor="#ffffffff" android:textSize="22sp"
+            android:gravity="center" android:layout_centerInParent="true"
+            android:textStyle="bold" android:id="@+id/tabmessages_title"
+            android:background="@drawable/messages_titlemenu_selector"/>
+        <TextView 
+            android:id="@+id/topbar_back"
+            android:layout_width="60dp"
+            android:layout_height="30dp"
+            android:layout_alignParentLeft="true"
+            android:background="@drawable/topbarback_selector"
+            android:layout_margin="5dp" 
+            android:text="返回"
+            android:textSize="14dp"
+            android:gravity="center"
+            android:textColor="@color/white"
+            />
+    </RelativeLayout>
+    
+	    <TextView android:layout_width="fill_parent" android:layout_height="wrap_content"
+	        android:text="关于测试版本" android:textColor="#ff888888"
+	        android:gravity="center" android:textSize="23sp"
+	        android:layout_marginTop="20dp"/>
+	    <TextView android:layout_width="fill_parent" android:layout_height="wrap_content"
+	        android:textColor="#ff888888"
+	        android:gravity="left" android:textSize="18sp"
+	        android:layout_marginTop="20dp"
+	        android:text="    “北京服务您”——应急信息快速发布系统由北京市突发事件应急委员会办公室、北京市经济和信息化委员会、北京市气象局联合开发，旨在通过智能手机方式快速发送、接收市委市政府重要提示性信息、预警信息等内容。"
+        />
+	</LinearLayout>
+
+	
+	
+</RelativeLayout>

@@ -1,0 +1,21 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+    android:background="@color/white"
+    
+    >
+	<ImageView  
+	    android:id="@+id/indexbackground"	   
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:background="@drawable/mainbg"
+	    />
+    <ImageView 
+        android:id="@+id/inedximage"
+        android:layout_width="280dp" android:layout_height="wrap_content"
+        android:src="@drawable/mainbg_logo" android:layout_alignParentTop="true"
+        android:layout_marginTop="70dp" android:layout_centerHorizontal="true"/>
+    
+
+</RelativeLayout>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white" >
+     <RelativeLayout
+        android:id="@+id/tabmessage_topbar_favoraties"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/topbarbg_nocorner"
+        android:focusable="true"
+        android:focusableInTouchMode="true" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_margin="0dp"
+            android:gravity="center"
+            android:padding="0dp"
+            android:text="我的收藏"
+            android:textColor="#ffffffff"
+            android:textSize="22sp"
+            />
+
+        <TextView
+            android:id="@+id/topbar_back_favorities"
+            android:layout_width="60dp"
+            android:layout_height="30dp"
+            android:layout_alignParentLeft="true"
+            android:background="@drawable/topbarback_selector" 
+            android:layout_margin="4dp"
+            android:text="返回"
+            android:textSize="15sp"
+            android:gravity="center"
+            android:textColor="@color/white"
+            />
+    </RelativeLayout>
+
+        <ListView
+            android:id="@+id/favoritieslist"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/tabmessage_topbar_favoraties" 
+            android:divider="@color/dividercolor"
+            android:dividerHeight="1dp"
+            />
+
+</RelativeLayout>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content" >
+
+    <RelativeLayout
+        android:id="@+id/head_contentLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="60dp" >
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="30dp" >
+
+            <ImageView
+                android:id="@+id/head_arrowImageView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_pull_refresh_arrow" />
+
+            <ProgressBar
+                android:id="@+id/head_progressBar"
+                style="?android:attr/progressBarStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:indeterminateDrawable="@drawable/bg_progressbar"
+                android:visibility="gone" />
+        </FrameLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center_horizontal"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/head_tipsTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="下拉可以刷新"
+                android:textColor="@color/text_color_gray"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/head_lastUpdatedTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="上次更新"
+                android:textColor="@color/text_color_gray"
+                android:textSize="10sp" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1px"
+            android:layout_alignParentBottom="true"
+            android:background="@color/text_color_gray" >
+        </View>
+    </RelativeLayout>
+
+</LinearLayout>

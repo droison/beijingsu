@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    <TextView    
+        android:id="@+id/replytitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:singleLine="true"
+        android:layout_marginLeft="8dp"
+        />
+    
+    <TextView   
+        android:id="@+id/replytime"
+        android:layout_below="@id/replytitle"
+        android:layout_marginTop="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="8dp"
+        android:layout_alignParentBottom="true"
+        android:textColor="@color/bule"
+        android:textSize="13sp"        
+        />
+
+</RelativeLayout>

@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+    android:background="@color/white"
+    >
+    <RelativeLayout 
+        android:id="@+id/controllayoutoplayout"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@drawable/topbarbg_nocorner"
+         >
+         
+       <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_margin="0dp"
+                android:gravity="center"
+                android:padding="0dp"
+                android:text="通知管理"
+                android:textColor="#ffffffff"
+                android:textSize="22sp"
+                />
+
+            <TextView
+                android:id="@+id/controlbar_back"
+                android:layout_width="60dp"
+                android:layout_height="30dp"
+                android:layout_margin="4dp"
+                android:background="@drawable/topbarback_selector"
+                android:gravity="center"
+                android:text="返回"
+                android:textColor="@color/white"
+                android:textSize="15sp"
+                />
+	</RelativeLayout>
+	
+      <LinearLayout
+        android:id="@+id/biaotilayout"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"       
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        >
+            
+        <RelativeLayout  
+            android:id="@+id/allselectlayout"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/mask"
+            >
+             <ImageView  
+                 android:id="@+id/quanimage"
+                 android:layout_width="30dp"
+                 android:layout_height="30dp"
+                 android:background="@drawable/tubiao1"
+                 android:layout_marginTop="4dp"
+                 android:layout_centerHorizontal="true" 
+                 />
+            <TextView   
+                android:id="@+id/selecttextview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="全选"
+                android:textColor="@color/white"
+                android:textSize="12sp"
+                android:layout_below="@id/quanimage"                
+                android:layout_centerHorizontal="true"                
+                />
+           
+            	
+        </RelativeLayout>
+         <RelativeLayout  
+            android:id="@+id/readstatelayout"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/mask"
+            >
+             <ImageView  
+                 android:id="@+id/yiduimage"
+                 android:layout_width="30dp"
+                 android:layout_height="30dp"
+                 android:background="@drawable/tubiao2"
+                 android:layout_marginTop="4dp"
+                 android:layout_centerHorizontal="true" 
+                 />
+             <TextView   
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="标记已读"
+                android:textColor="@color/white"
+                android:textSize="12sp"
+                android:layout_below="@id/yiduimage"                 
+                android:layout_centerHorizontal="true"                 
+                />
+            
+        </RelativeLayout>
+         <RelativeLayout  
+            android:id="@+id/deletelayout"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/mask"
+            >
+              <ImageView  
+                 android:id="@+id/shanchuimage"
+                 android:layout_width="30dp"
+                 android:layout_height="30dp"
+                 android:background="@drawable/tubiao3"
+                 android:layout_marginTop="4dp"
+                 android:layout_centerHorizontal="true" 
+                 />
+             <TextView   
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="删除"
+                android:textColor="@color/white"
+                android:textSize="12sp"
+                android:layout_below="@id/shanchuimage"       
+                android:layout_centerHorizontal="true"                
+                />
+        </RelativeLayout>
+       
+    </LinearLayout>
+	
+    <ListView  
+        android:id="@+id/messageslist"
+        android:layout_below="@id/controllayoutoplayout"
+        android:layout_above="@id/biaotilayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:divider="@color/dividercolor"
+	    android:dividerHeight="1dp"	    
+	    android:cacheColorHint="#00000000"
+        />
+    
+  
+</RelativeLayout>

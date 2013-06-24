@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:background="#fff5f5f5">
+    <RelativeLayout
+        android:id="@+id/tabmessage_topbar"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/topbarbg_nocorner"
+        android:focusable="true"
+        android:focusableInTouchMode="true" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_margin="0dp"
+            android:gravity="center"
+            android:padding="0dp"
+            android:text="查询"
+            android:textColor="#ffffffff"
+            android:textSize="22sp"
+            />
+        
+      <TextView
+          	android:id="@+id/exitdementapp"
+            android:layout_width="60dp"
+            android:layout_height="30dp"
+            android:layout_alignParentLeft="true"  
+            android:layout_marginLeft="10dp"          
+            android:gravity="center"            
+            android:text="返回"
+            android:textColor="@color/white"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+	
+    </RelativeLayout>
+
+    
+  
+   
+    <TextView  
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="更多内容，敬请期待......"
+        android:textColor="@color/black"
+        android:textSize="22dp"
+        android:gravity="center"
+        android:layout_marginTop="250dp"      
+        />
+    
+    
+</RelativeLayout>

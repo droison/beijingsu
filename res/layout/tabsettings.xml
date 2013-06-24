@@ -1,0 +1,462 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout   
+        android:id="@+id/settinglayout"   
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#fff5f5f5"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:id="@+id/tabmessage_topbar"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/topbarbg_nocorner"
+            android:focusable="true"
+            android:focusableInTouchMode="true" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_margin="0dp"
+                android:gravity="center"
+                android:padding="0dp"
+                android:text="设置"
+                android:textColor="#ffffffff"
+                android:textSize="22sp"
+                />
+            
+        </RelativeLayout>
+       
+        
+         
+         
+
+        <!-- 免打扰 -->
+        <RelativeLayout
+            android:id="@+id/tabsettings_freetime_panel"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/settings_upradius_item_selector" >
+
+            <TextView
+                android:id="@+id/tabsettings_freetime_panel_freetime_textview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:gravity="center"
+                android:padding="0dp"
+                android:text="免打扰设置"
+                android:textColor="#ff333333"
+                android:textSize="18sp" />
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                android:src="@drawable/arrawright" />
+        </RelativeLayout>
+         <RelativeLayout
+            android:id="@+id/tabsettings_textsize_panel"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="2dp"           
+            android:background="@drawable/settings_noradius_item_selector" >
+            					
+
+            <TextView
+                android:id="@+id/tabsettings_textsize_panel__textview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:gravity="center"
+                android:padding="0dp"
+                android:text="字体设置"
+                android:textColor="#ff333333"
+                android:textSize="18sp" />
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                android:src="@drawable/arrawright" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/tabsettings_myfavirator_panel"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp" 
+            android:layout_marginTop="2dp"          
+            android:background="@drawable/settings_noradius_item_selector" >
+
+            <TextView
+                android:id="@+id/tabsettings_myfavorator_panel__textview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:gravity="center"
+                android:padding="0dp"
+                android:text="我的收藏"
+                android:textColor="#ff333333"
+                android:textSize="18sp" />
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                android:src="@drawable/arrawright" />
+        </RelativeLayout>
+        <!-- 软件分享 -->
+
+        <RelativeLayout
+            android:id="@+id/tabsettings_shareapp_panel"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="2dp"
+            android:background="@drawable/settings_noradius_item_selector" >
+
+            <TextView
+                android:id="@+id/tabsettings_aboutapptext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:gravity="center"
+                android:padding="0dp"
+                android:text="软件分享"
+                android:textColor="#ff111111"
+                android:textSize="18sp" />
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                android:src="@drawable/arrawright" />
+        </RelativeLayout>
+        
+         <!-- 信息反馈 -->
+        <RelativeLayout
+            android:id="@+id/tabsettings_feedback_panel"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="2dp"
+            android:background="@drawable/settings_noradius_item_selector" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:gravity="center"
+                android:padding="0dp"
+                android:text="信息反馈"
+                android:textColor="#ff111111"
+                android:textSize="18sp" />
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                android:src="@drawable/arrawright" />
+        </RelativeLayout>
+        
+        <!-- 检查更新 -->
+        <RelativeLayout
+            android:id="@+id/tabsettings_checknewedition_panel"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="2dp"
+            android:background="@drawable/settings_noradius_item_selector" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:gravity="center"
+                android:padding="0dp"
+                android:text="版本更新"
+                android:textColor="#ff111111"
+                android:textSize="18sp" />
+            
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                android:src="@drawable/arrawright" />
+
+        </RelativeLayout>
+        
+        <RelativeLayout
+            android:id="@+id/tabsettings_volumn_panel"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="2dp"
+            android:background="@drawable/settings_noradius_item_selector" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:gravity="center"
+                android:padding="0dp"
+                android:text="声音设置"
+                android:textColor="#ff111111"
+                android:textSize="18sp" />
+            
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                android:src="@drawable/arrawright" />
+
+        </RelativeLayout>
+
+        <!-- 关于软件 -->
+
+        <RelativeLayout
+            android:id="@+id/tabsettings_aboutapp_panel"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="2dp"
+            android:background="@drawable/settings_downradius_item_selector" >
+
+            <TextView
+                android:id="@+id/tabsettings_aboutapptext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:gravity="center"
+                android:padding="0dp"
+                android:text="关于"
+                android:textColor="#ff111111"
+                android:textSize="18sp" />
+
+           
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                android:src="@drawable/arrawright" />
+        </RelativeLayout>
+
+        
+
+       
+
+       
+
+        
+    </LinearLayout>
+    
+    <View android:layout_width="fill_parent" android:layout_height="fill_parent"
+        android:background="#88000000" android:id="@+id/tabmessage_mask"
+        android:layout_below="@id/tabmessage_topbar" android:visibility="gone"/>
+    
+    <!-- 分享菜单 -->
+	<LinearLayout android:layout_width="230dp" android:layout_height="wrap_content"
+	    android:orientation="vertical" android:layout_centerInParent="true"
+	    android:id="@+id/message_share_menu_panle"
+	    android:background="@drawable/menu_bg_shadow" android:padding="8dp"
+	    android:visibility="gone">
+	    <RelativeLayout android:layout_width="fill_parent" android:layout_height="50dp"
+	        android:background="#000000">
+	       <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+	        android:text="分享" android:textColor="#ffffffff" android:textSize="19sp"
+	        android:textStyle="bold" android:layout_alignParentLeft="true"
+	        android:layout_centerVertical="true"
+	        android:gravity="left|center_vertical" android:paddingLeft="5dp"/> 
+	       <ImageView android:layout_width="20dp" android:layout_height="20dp"
+	           android:src="@drawable/topbarcancel_selector"
+	           android:id="@+id/message_share_menu_panle_close"
+	           android:layout_alignParentRight="true"
+	           android:layout_centerVertical="true" android:layout_marginRight="10dp"
+	           android:visibility="gone"/>
+	    </RelativeLayout>
+	    
+	    <LinearLayout android:layout_width="fill_parent" android:layout_height="60dp"
+	        android:orientation="horizontal"
+	        android:gravity="center_vertical"
+	        android:id="@+id/message_share_menu_sms"
+	        android:background="@drawable/messages_titlemenu_selector">
+	        <ImageView android:layout_width="30dp" android:layout_height="30dp"
+	            android:src="@drawable/smsicon"
+	            android:layout_marginLeft="20dp"/>
+	        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+	            android:text="短信分享" android:textColor="#ff000000"
+	            android:textSize="18sp" android:textStyle="bold"
+	            android:layout_marginLeft="20dp"/>
+	    </LinearLayout>
+	    <View android:layout_width="fill_parent" android:layout_height="1dp"
+	        android:background="#ffbbbbbb"
+	        android:layout_marginLeft="2dp" android:layout_marginRight="2dp"
+	        />
+	    <LinearLayout android:layout_width="fill_parent" android:layout_height="60dp"
+	        android:orientation="horizontal" 
+	        android:gravity="center_vertical"
+	        android:id="@+id/message_share_menu_weixin"
+	        android:background="@drawable/messages_titlemenu_selector">
+	        <ImageView android:layout_width="30dp" android:layout_height="30dp"
+	            android:src="@drawable/weixinicon"
+	            android:layout_marginLeft="20dp"/>
+	        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+	            android:text="微信分享" android:textColor="#ff000000"
+	            android:textSize="18sp" android:textStyle="bold"
+	            android:layout_marginLeft="20dp"/>
+	    </LinearLayout>
+	    <View android:layout_width="fill_parent" android:layout_height="1dp"
+	        android:background="#ffbbbbbb"
+	        android:layout_marginLeft="2dp" android:layout_marginRight="2dp"/>
+	    <LinearLayout android:layout_width="fill_parent" android:layout_height="60dp"
+	        android:orientation="horizontal" 
+	        android:gravity="center_vertical"
+	        android:id="@+id/message_share_menu_weibo"
+	        android:background="@drawable/messages_titlemenu_selector">
+	        <ImageView android:layout_width="30dp" android:layout_height="30dp"
+	            android:src="@drawable/weiboicon"
+	            android:layout_marginLeft="20dp"/>
+	        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+	            android:text="微博分享" android:textColor="#ff000000"
+	            android:textSize="18sp" android:textStyle="bold"
+	            android:layout_marginLeft="20dp"/>
+	    </LinearLayout>
+	</LinearLayout>
+
+	
+
+	    <LinearLayout
+	        android:id="@+id/textSizelayout"
+	        android:layout_width="match_parent"
+	        android:layout_height="165dp"
+	        android:layout_marginLeft="40dp"
+	        android:layout_marginRight="40dp"
+	        android:layout_marginTop="100dp"
+	        android:background="@drawable/button3bg_off"
+	        android:orientation="vertical"
+	        android:visibility="invisible" >
+
+	        <TextView
+	            android:layout_width="match_parent"
+	            android:layout_height="40dp"
+	            android:background="@color/black"
+	            android:gravity="center"
+	            android:text="字体设置"	            
+	            android:textColor="@color/white"
+	            android:textSize="18sp" />
+
+	        <LinearLayout
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+	            android:layout_marginTop="8dp"
+	            android:orientation="horizontal" >
+
+	            <TextView
+	                android:id="@+id/intrudtext"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:layout_marginLeft="15dp"
+	                android:layout_marginRight="10dp"
+	                android:text="设置文章字体"
+	                android:textColor="@color/black"
+	                android:textSize="16dp" />
+
+	            <TextView
+	                android:id="@+id/textsizetext"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:layout_marginLeft="10dp"
+	                android:text="18"
+	                android:textColor="@color/black"
+	                android:textSize="15dp" />
+	        </LinearLayout>
+
+	        <SeekBar
+	            android:id="@+id/textseekbar"
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+	            android:layout_marginLeft="5dp"
+	            android:layout_marginRight="5dp"
+	            android:layout_marginTop="2dp" />
+
+	        <RelativeLayout
+	            android:layout_width="match_parent"
+	            android:layout_height="40dp"
+	            android:layout_marginTop="20dp"
+	            android:background="@color/grey"
+	            android:paddingTop="5dp" 	           
+	            >
+
+	            <TextView
+	                android:id="@+id/textsizebutton"
+	                android:layout_width="70dp"
+	                android:layout_height="30dp"
+	                android:layout_alignParentLeft="true"
+	                android:layout_marginLeft="20dp"
+	                android:background="@drawable/button1bg_selector"
+	                android:gravity="center"
+	                android:text="确定"
+	                android:textColor="@color/white"
+	                android:textSize="14dp" />
+
+	            <TextView
+	                android:id="@+id/textsizecancelbutton"
+	                android:layout_width="70dp"
+	                android:layout_height="30dp"
+	                android:layout_marginRight="20dp"
+	                android:layout_alignParentRight="true"
+	                android:background="@drawable/button1bg_selector"
+	                android:gravity="center"
+	                android:text="取消"
+	                android:textColor="@color/white"
+	                android:textSize="14dp" />
+	        </RelativeLayout>
+	    </LinearLayout>
+	
+</RelativeLayout>

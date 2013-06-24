@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="220dp"
+    android:layout_height="200dp" >
+    
+    <TextView  
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text="字体设置"
+        android:textSize="18sp"
+        android:textColor="@color/white"
+        android:gravity="left|center_vertical"
+        android:background="@color/black"
+        
+        />
+    
+    <TextView   
+        android:id="@+id/intrudtext"
+        android:layout_marginTop="65dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"        
+        android:text="设置文章字体"
+        android:textColor="@color/grey"
+        android:textSize="16dp"
+        
+        />
+    
+    
+    <TextView   
+        android:id="@+id/textsizetext"
+        android:layout_toRightOf="@id/intrudtext"
+        android:layout_alignTop="@id/intrudtext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:text="18"
+        android:textColor="@color/grey"
+        android:textSize="14dp"        
+        />
+    
+    <SeekBar    
+        android:id="@+id/textseekbar"
+        android:layout_above="@id/intrudtext"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:max="36"
+        />
+    
+    <RelativeLayout   
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/grey"
+        >
+        
+        <TextView  
+            android:id="@+id/textsizebutton"
+            android:layout_width="60dp"
+            android:layout_height="30dp"
+            android:text="确定"
+            android:textColor="@color/white"
+            android:textSize="14dp"
+            android:gravity="center"
+            android:background="@drawable/button1bg_selector"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="15dp"                                    
+            />
+        
+         <TextView  
+            android:id="@+id/textsizecancelbutton"           
+            android:layout_width="60dp"
+            android:layout_height="30dp"
+            android:text="取消"
+            android:textColor="@color/white"
+            android:textSize="14dp"
+            android:gravity="center"
+            android:background="@drawable/button1bg_selector"               
+            android:layout_alignParentRight="true"    
+            android:layout_marginRight="15dp"     
+            />
+        </RelativeLayout>
+    
+
+</RelativeLayout>

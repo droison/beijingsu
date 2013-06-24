@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="5dp" >
+
+    <TextView
+        android:id="@+id/hotdingyue_single_title_textviewlist"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="10dp"
+        android:text="title"
+        android:textColor="#ff333333"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+    
+	 <TextView
+            android:id="@+id/hotdingyue_total_numlist"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/hotdingyue_single_title_textviewlist"
+            android:layout_alignLeft="@id/hotdingyue_single_title_textviewlist"
+            android:text="市气象局"
+            android:textColor="@color/grey"
+            android:textSize="14sp" />
+    
+
+    <LinearLayout
+        android:id="@+id/monthlayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/hotdingyue_single_title_textviewlist"
+        android:layout_marginLeft="170dp"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="本月 ："
+            android:textColor="@color/grey"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/hotdingyue_today_numlist"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:textColor="@color/grey"
+            android:textSize="14sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="条"
+            android:textColor="@color/grey"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/monthlayout"
+        android:layout_below="@id/monthlayout"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="总计 ："
+            android:textColor="@color/grey"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/hotdingyue_numlist"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:textColor="@color/grey"
+            android:textSize="14sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="条"
+            android:textColor="@color/grey"
+            android:textSize="14sp" />
+    </LinearLayout>
+    
+     <CheckBox
+        android:id="@+id/checkhotdingyuebutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"        
+        android:layout_margin="10dp" 
+        style="@style/mycheckbox"
+        android:focusable="false"
+        />
+
+</RelativeLayout>

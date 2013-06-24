@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bacgroud_grep"    
+    android:id="@+id/tab_list_background" 
+    android:paddingTop="5dp"
+    android:paddingBottom="5dp"
+    >
+    
+    
+    
+
+    <TextView
+        android:id="@+id/tabmessage_list_single_title_textviewlist"
+         android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="30dp"
+        android:text="title"
+        android:textColor="#ff333333"
+        android:textSize="18sp" 
+        android:maxLength="9"     
+        android:singleLine="true"        
+       />
+
+    <LinearLayout
+        android:id="@+id/dingyue_countlayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/tabmessage_list_single_title_textviewlist"
+        android:layout_below="@id/tabmessage_list_single_title_textviewlist"
+        android:layout_marginTop="2dp"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="订阅人数 ："
+            android:textColor="@color/grey"
+            android:textSize="13sp" />
+
+        <TextView
+            android:id="@+id/tabmessage_showbycat_ding_numlist"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:textColor="@color/grey"
+            android:textSize="13sp" />
+      
+    </LinearLayout>
+
+	<TextView
+	    android:id="@+id/textflag"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:text="本月 ："
+	    android:textColor="@color/grey"
+	    android:textSize="13sp" 
+	    android:layout_alignParentRight="true"	    
+	    android:layout_marginRight="85dp"
+	    android:layout_alignBottom="@id/tabmessage_list_single_title_textviewlist"
+	    android:visibility="invisible"
+	    />
+
+    <LinearLayout
+        android:id="@+id/tabmonthlayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"        
+        android:layout_alignLeft="@id/textflag"
+        android:layout_alignBottom="@id/tabmessage_list_single_title_textviewlist"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="本月 ："
+            android:textColor="@color/grey"
+            android:textSize="13sp" />
+
+        <TextView
+            android:id="@+id/tabmessage_showbycat_curmonth_numlist"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:textColor="@color/grey"
+            android:textSize="13sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" 条"
+            android:textColor="@color/grey"
+            android:textSize="13sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_alignBottom="@id/dingyue_countlayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/tabmonthlayout"       
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="总计 ："
+            android:textColor="@color/grey"
+            android:textSize="13sp" />
+
+        <TextView
+            android:id="@+id/tabmessage_showbycat_total_numlist"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:textColor="@color/grey"
+            android:textSize="13sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" 条"
+            android:textColor="@color/grey"
+            android:textSize="13sp" />
+    </LinearLayout>
+
+   <CheckBox
+        android:id="@+id/checkdingyuebutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"             
+        android:layout_alignBottom="@id/dingyue_countlayout"   
+        style="@style/mycheckbox"       
+        android:focusable="false"
+        android:checked="false"
+        /> 
+   
+
+   
+</RelativeLayout>

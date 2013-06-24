@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#fff5f5f5"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:id="@+id/tabmessage_topbar"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/topbarbg_nocorner"
+            android:focusable="true"
+            android:focusableInTouchMode="true" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_margin="0dp"
+                android:gravity="center"
+                android:padding="0dp"
+                android:text="订阅"
+                android:textColor="#ffffffff"
+                android:textSize="22sp"
+                />
+
+            <TextView
+                android:id="@+id/topbar_back"
+                android:layout_width="60dp"
+                android:layout_height="30dp"
+                android:layout_margin="4dp"
+                android:background="@drawable/topbarback_selector"
+                android:gravity="center"
+                android:text="返回"
+                android:textColor="@color/white"
+                android:textSize="15sp"
+                />
+            <!--
+             <View android:layout_width="40dp" android:layout_height="fill_parent"
+            android:layout_alignParentRight="true"
+            android:id="@+id/top_show_curvepage" />
+            -->
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/dingyuelayout"
+            android:layout_width="fill_parent"
+            android:layout_height="36dp"           
+            android:orientation="horizontal"
+            android:background="@color/white"
+             >
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1" >
+
+                <TextView
+                    android:id="@+id/alldingyye"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"                    
+                    android:gravity="center"
+                    android:text="全部"
+                    android:textColor="@color/red"
+                    android:textSize="16sp" />
+
+                <ImageView
+                    android:id="@+id/alldingyyeline"
+                    android:layout_width="80dp"
+                    android:layout_height="3dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_alignParentBottom="true"
+                    android:background="@color/deepred" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1" >
+
+                <TextView
+                    android:id="@+id/hotdingyye"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_centerInParent="true"
+                    android:gravity="center"
+                    android:text="热门"
+                    android:textColor="@color/dark"
+                    android:textSize="16sp" />
+
+                <ImageView
+                    android:id="@+id/hotdingyyeline"
+                    android:layout_width="80dp"
+                    android:layout_height="3dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_alignParentBottom="true"
+                    android:background="@color/deepred"
+                    android:visibility="invisible" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1" >
+
+                <TextView
+                    android:id="@+id/mydingyye"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_centerInParent="true"
+                    android:gravity="center"
+                    android:text="我的订阅"
+                    android:textColor="@color/dark"
+                    android:textSize="16sp" />
+
+                <ImageView
+                    android:id="@+id/mydingyyeline"
+                    android:layout_width="80dp"
+                    android:layout_height="3dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_alignParentBottom="true"
+                    android:background="@color/deepred"
+                    android:visibility="invisible" />
+            </RelativeLayout>
+        </LinearLayout>
+        <ImageView	  
+	        android:id="@+id/dpimageview2"	          
+	        android:layout_width="match_parent"
+	        android:layout_height="2dp"	         
+	        android:background="@color/text_color_gray_light" /> 
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <ExpandableListView
+                android:id="@+id/tabcatologue_listview"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:background="#fff5f5f5"
+                android:divider="@color/dividercolor"
+                android:childDivider="@color/text_color_gray_light"
+                android:dividerHeight="1dp"
+                android:visibility="visible" 
+                android:cacheColorHint="#00000000"
+                />
+
+            <ListView
+                android:id="@+id/hotcatologue_listview"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:background="@color/white"
+                android:divider="@color/dividercolor"
+                android:dividerHeight="1dp"
+                android:visibility="invisible"
+                android:cacheColorHint="#00000000"
+                 />
+
+            <ListView
+                android:id="@+id/mycatologue_listview"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:background="@color/white"
+               	android:divider="@color/yuandivider"
+                android:dividerHeight="1dp"
+                android:visibility="invisible"
+                android:cacheColorHint="#00000000"
+                 />
+        </FrameLayout>
+    </LinearLayout>
+
+    <!--
+      <LinearLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+	    android:id="@+id/curved_page_about_app" android:background="@drawable/curvedpage"
+	    android:orientation="vertical" android:visibility="invisible">
+	    <RelativeLayout android:layout_width="fill_parent" android:layout_height="40dp"
+        android:layout_alignParentTop="true" android:background="@drawable/topbarbg_nocorner"
+        android:id="@+id/tabmessage_topbar" android:focusable="true"
+        android:focusableInTouchMode="true">
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:padding="0dp" android:layout_margin="0dp"
+            android:text="关于" android:textColor="#ffffffff" android:textSize="22sp"
+            android:gravity="center" android:layout_centerInParent="true"
+            android:textStyle="bold" android:id="@+id/tabmessages_title"
+            android:background="@drawable/messages_titlemenu_selector"/>
+        <ImageView
+            android:id="@+id/topbar_back"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_alignParentLeft="true"
+            android:src="@drawable/topbarback_selector"
+            android:layout_margin="4dp" />
+    </RelativeLayout>
+    
+	    <TextView android:layout_width="fill_parent" android:layout_height="wrap_content"
+	        android:text="关于测试版本" android:textColor="#ff888888"
+	        android:gravity="center" android:textSize="23sp"
+	        android:layout_marginTop="20dp"/>
+	    <TextView android:layout_width="fill_parent" android:layout_height="wrap_content"
+	        android:textColor="#ff888888"
+	        android:gravity="left" android:textSize="18sp"
+	        android:layout_marginTop="20dp"
+	        android:text="    “北京服务您”——应急信息快速发布系统由北京市突发事件应急委员会办公室、北京市经济和信息化委员会、北京市气象局联合开发，旨在通过智能手机方式快速发送、接收市委市政府重要提示性信息、预警信息等内容。"
+        />
+	</LinearLayout>
+    -->
+
+</RelativeLayout>

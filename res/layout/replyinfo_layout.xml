@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+    android:background="@color/white"
+    >
+    
+    <RelativeLayout
+        android:id="@+id/tabmessage_topbar"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/subnavi_bg"
+        android:focusable="true"
+        android:focusableInTouchMode="true"        
+        >
+
+        <TextView
+            android:id="@+id/replyback"
+            android:layout_width="60dp"
+            android:layout_height="30dp"
+            android:layout_margin="4dp"
+            android:background="@drawable/topbarback_selector"
+            android:gravity="center"
+            android:text="返回"
+            android:textColor="#ffffffff"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/tabmessages_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_margin="0dp"
+            android:gravity="center"
+            android:padding="0dp"
+            android:text="回复详情"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+             />  
+    </RelativeLayout>
+    
+    <TextView  
+        android:id="@+id/replyinfotitle"
+        android:layout_below="@id/tabmessage_topbar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:textSize="20sp"
+        android:textColor="@color/black"
+        android:singleLine="true"
+        android:ellipsize="end"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="8dp"
+        />
+    
+     <TextView
+         android:id="@+id/replyinfotime"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_below="@id/replyinfotitle"
+         android:layout_marginLeft="8dp"
+         android:layout_marginRight="8dp"
+         android:layout_marginTop="10dp"
+         android:ellipsize="end"
+         android:singleLine="true"
+         android:textColor="@color/grey"
+         android:textSize="14dp" />
+    
+     <ImageView   
+         android:id="@+id/line"
+         android:layout_width="match_parent"
+         android:layout_height="1dp"
+         android:background="@color/grey"
+         android:layout_below="@id/replyinfotime"
+         android:layout_marginTop="2dp"
+         />
+     
+     
+     <TextView  
+        android:id="@+id/replyinfocontent"
+        android:layout_below="@id/line"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"       
+        android:textColor="@color/black"
+        android:textSize="18sp"        
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        />
+ 
+</RelativeLayout>

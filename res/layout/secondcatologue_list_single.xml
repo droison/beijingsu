@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff5f5f5" >
+
+    
+    
+     <TextView
+        android:id="@+id/secondcat_list_single_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="44dp"        
+        android:text="title"
+        android:textColor="#ff333333"
+        android:textSize="18sp" 
+         />
+     
+      <LinearLayout
+        android:id="@+id/secondmonthlayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"        
+        android:layout_below="@id/secondcat_list_single_textview"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="60dp"
+        android:orientation="horizontal" >
+
+          <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="本月 ："
+            android:textColor="@color/grey"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/secondcat_curmonth_numlist"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:textColor="@color/grey"
+            android:textSize="14sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" 条"
+            android:textColor="@color/grey"
+            android:textSize="14sp" />
+    </LinearLayout>
+     
+
+    <LinearLayout
+        android:id="@+id/seconddingyue_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/secondcat_list_single_textview"
+        android:layout_below="@id/secondmonthlayout"
+        android:orientation="horizontal" >
+
+       <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="订阅人数 ："
+            android:textColor="@color/grey"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/secondcat_dingyue_numlist"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:textColor="@color/grey"
+            android:textSize="14sp" />
+
+        
+    </LinearLayout>
+
+   
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"        
+        android:layout_below="@id/secondmonthlayout"
+        android:layout_alignLeft="@id/secondmonthlayout"
+        android:layout_alignBottom="@id/seconddingyue_layout"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="总计 ："
+             android:textColor="@color/grey"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/secondcat_total_numlist"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+             android:textColor="@color/grey"
+            android:textSize="14sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" 条"
+             android:textColor="@color/grey"
+            android:textSize="14sp" />
+    </LinearLayout>
+    
+    <CheckBox
+        android:id="@+id/secondcat_list_single_choosedicon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"        
+        android:layout_centerVertical="true"
+        android:layout_marginRight="10dp" 
+        style="@style/mycheckbox"       
+        android:focusable="false"
+        /> 
+ 
+
+</RelativeLayout>

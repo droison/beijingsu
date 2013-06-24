@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+<Preference android:key="key_pref_cats"
+    android:summary="保存目录列表的json格式"/>
+<Preference android:key="key_pref_filter"
+    android:summary="保存过滤的json格式"/>
+<Preference android:key="key_pref_freetime"
+    android:summary="保存freetime的json格式"/>
+<Preference android:key="key_pref_isfirstuse"
+    android:summary="是否第一次用"/>
+<Preference android:key="key_pref_deviceid"
+    android:summary="deviceid"/>        
+</PreferenceScreen>

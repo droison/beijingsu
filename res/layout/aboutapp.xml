@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"    
+    android:background="@drawable/abooutappbg">
+    <RelativeLayout
+        android:id="@+id/tabmessage_topbar"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/topbarbg_nocorner"
+        android:focusable="true"
+        android:focusableInTouchMode="true" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_margin="0dp"
+            android:gravity="center"
+            android:padding="0dp"
+            android:text="关于"
+            android:textColor="#ffffffff"
+            android:textSize="22sp"
+            />
+
+        <TextView
+            android:id="@+id/topbar_back"
+            android:layout_width="60dp"
+            android:layout_height="30dp"
+            android:layout_alignParentLeft="true"
+            android:background="@drawable/topbarback_selector" 
+            android:layout_margin="4dp"
+            android:text="返回"
+            android:textSize="15sp"
+            android:gravity="center"
+            android:textColor="@color/white"
+            />
+    </RelativeLayout>
+    
+    <TextView  
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="80dp"
+        android:layout_marginRight="80dp"
+        android:text="北京服务您"
+        android:textColor="@color/black"
+        android:textSize="22dp"
+        android:textStyle="bold"
+        android:gravity="center"
+        />
+    
+      <TextView  
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginLeft="180dp"        
+        android:text="-测试版"
+        android:textColor="@color/grey"
+        android:textSize="18dp"
+        android:gravity="center"
+        />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:text="      “北京服务您”——应急信息快速发布系统由北京市突发事件应急委员会办公室、北京市经济和信息化委员会、北京市气象局联合开发，旨在通过智能手机方式快速发送、接收市委市政府重要提示性信息、预警信息等内容。"
+        android:textColor="@color/black"
+        android:textSize="16sp" />
+
+</LinearLayout>

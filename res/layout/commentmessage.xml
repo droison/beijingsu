@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:gravity="center_horizontal"
+    android:background="#fff5f5f5">
+
+    <RelativeLayout
+        android:id="@+id/tabmessage_topbar"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/topbarbg_nocorner"
+        android:focusable="true"
+        android:focusableInTouchMode="true" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_margin="0dp"
+            android:gravity="center"
+            android:padding="0dp"
+            android:text="评价"
+            android:textColor="#ffffffff"
+            android:textSize="22sp"
+            />
+
+        <TextView
+            android:id="@+id/topbar_back"
+            android:layout_width="60dp"
+            android:layout_height="30dp"
+            android:layout_alignParentLeft="true"
+            android:layout_margin="4dp"
+            android:background="@drawable/topbarback_selector"
+            android:gravity="center"
+            android:text="返回"
+            android:textColor="#ffffffff"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/comment_ok_button"
+            android:layout_width="60dp"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_margin="4dp"
+            android:background="@drawable/button1bg_selector"
+            android:gravity="center"
+            android:text="发送"
+            android:textColor="#ffffffff"
+            android:textSize="15sp" />
+
+    </RelativeLayout>
+    
+    <EditText android:layout_width="fill_parent" android:layout_height="200dp"
+        android:id="@+id/comment_edittext" android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp" android:layout_marginRight="20dp"
+        android:hint="在此处发表评论" android:gravity="left|top"/> 
+     
+    <RelativeLayout 
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"           
+         android:layout_marginTop="30dp"
+            
+        >
+        <TextView
+            android:id="@+id/uploadpic"
+            android:layout_width="150dp"
+            android:layout_height="50dp"               
+            android:background="@drawable/buttonbg_selector"
+            android:gravity="center"
+            android:layout_centerInParent="true"            
+            android:text="添加照片"
+            android:textColor="@color/white"
+            android:textSize="18dp" />
+        <ImageView 
+            android:id="@+id/photoimage"    
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="10dp"/>
+         
+        
+    </RelativeLayout>
+    
+     
+      
+   
+
+</LinearLayout>        
+</RelativeLayout>

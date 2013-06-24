@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#fff5f5f5"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:id="@+id/tabmessage_topbar"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/topbarbg_nocorner"
+            android:focusable="true"
+            android:focusableInTouchMode="true" >
+            
+              <TextView
+            android:id="@+id/volumn_topbar_back"
+            android:layout_width="60dp"
+            android:layout_height="30dp"
+            android:layout_alignParentLeft="true"
+            android:background="@drawable/topbarback_selector" 
+            android:layout_margin="4dp"
+            android:text="返回"
+            android:textSize="15sp"
+            android:gravity="center"
+            android:textColor="@color/white"
+            />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_margin="0dp"
+                android:gravity="center"
+                android:padding="0dp"
+                android:text="声音设置"
+                android:textColor="#ffffffff"
+                android:textSize="22sp" />
+        </RelativeLayout>
+
+        <!-- 免打扰 -->
+
+        <RelativeLayout
+            android:id="@+id/tabsettings_freetime_panel"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/settings_upradius_item_selector" >
+
+            <TextView
+                android:id="@+id/slice_mode_textview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:gravity="center"
+                android:padding="0dp"
+                android:text="静音模式"
+                android:textColor="#ff333333"
+                android:textSize="18sp" />
+
+            <CheckBox
+                android:id="@+id/slice_toggle"
+                style="@style/mycheckbox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:checked="false" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/tabsettings_textsize_panel"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="2dp"
+            android:background="@drawable/settings_noradius_item_selector" >
+
+            <TextView
+                android:id="@+id/slice_vibrate_mode_textview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:gravity="center"
+                android:padding="0dp"
+                android:text="静音时振动"
+                android:textColor="#ff333333"
+                android:textSize="18sp" />
+
+            <CheckBox
+                android:id="@+id/slice_vibrate_toggle"
+                style="@style/mycheckbox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@id/dingyue_countlayout2"
+                android:layout_alignParentRight="true"
+                android:checked="false" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/tabsettings_myfavirator_panel"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="2dp"
+            android:background="@drawable/settings_noradius_item_selector" >
+
+            <TextView
+                android:id="@+id/no_vibrate_mode_textview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:gravity="center"
+                android:padding="0dp"
+                android:text="响铃模式"
+                android:textColor="#ff333333"
+                android:textSize="18sp" />
+
+            <CheckBox
+                android:id="@+id/no_slice_vibrate_toggle"
+                style="@style/mycheckbox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@id/dingyue_countlayout2"
+                android:layout_alignParentRight="true"
+                android:checked="false" />
+        </RelativeLayout>
+        <!-- 软件分享 -->
+
+        <RelativeLayout
+            android:id="@+id/tabsettings_shareapp_panel"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="2dp"
+            android:background="@drawable/settings_downradius_item_selector" >
+
+            <TextView
+                android:id="@+id/have_vibrate_mode_textview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:gravity="center"
+                android:padding="0dp"
+                android:text="响铃时振动"
+                android:textColor="#ff333333"
+                android:textSize="18sp" />
+
+            <CheckBox
+                android:id="@+id/have_slice_vibrate_toggle"
+                style="@style/mycheckbox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@id/dingyue_countlayout2"
+                android:layout_alignParentRight="true"
+                android:checked="false" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</RelativeLayout>
